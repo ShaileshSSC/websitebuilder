@@ -10,10 +10,10 @@
 .dashboard-menu {
     display: flex;
     flex-direction: column;
-    width: 25%;
+    width: 22%;
     height: 100%;
     padding: 20px;
-    background: #fbfbfe;
+    background: #f7f7f7;
     padding-top: 130px;
     z-index: 2;
 }
@@ -36,29 +36,31 @@
 
 .dashboard-button {
     all: unset;
-    border-radius: 35px;
+    border-radius: 20px;
     font-size: 25px;
     width: 90%;
-    height: 55px;
+    height: 45px;
     margin: 5px;
     color: rgb(0, 0, 0);
     padding: 10px;
-     text-indent: 20px;
-  display: inline-block; 
+    text-indent: 20px;
+    display: inline-block; 
     font-family: 'Luckiest Guy', cursive;
     transition: transform 0.2s, background-color 0.1s ease-in-out;
 }
 
 .current {
-    color: white;
-    background: linear-gradient(0deg, rgb(51, 22, 112) 0%, rgb(98, 61, 245) 100%);
-}
+    color: rgb(255, 255, 255);
+    /* background: linear-gradient(0deg, rgb(51, 22, 112) 0%, rgb(98, 61, 245) 100%); */
+    background: linear-gradient(5deg, rgba(173, 97, 29, 1) 0%, rgba(253, 187, 45, 1) 100%);
+box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;}
 
 .dashboard-button:hover {
     cursor: pointer;
-    background-color: #ebebef;
+    background-color: #efefef; 
 }
 
 .dashboard-button:active {
     transform: scale(0.95);
+    height: 45px;
 }
