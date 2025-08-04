@@ -10,9 +10,10 @@
 .dashboard-menu {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 25%;
     height: 100%;
-    /* background: #0d0d0d; */
+    padding: 20px;
+    background: #fbfbfe;
     padding-top: 130px;
     z-index: 2;
 }
@@ -35,23 +36,29 @@
 
 .dashboard-button {
     all: unset;
-    border-radius: 15px;
+    border-radius: 35px;
     font-size: 25px;
-    width: 80%;
-    height: 40px;
-    margin: 10px;
+    width: 90%;
+    height: 55px;
+    margin: 5px;
     color: rgb(0, 0, 0);
     padding: 10px;
-    text-align: center;
+     text-indent: 20px;
+  display: inline-block; 
     font-family: 'Luckiest Guy', cursive;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s, background-color 0.1s ease-in-out;
 }
 
 .current {
     color: white;
-    background: linear-gradient(0deg, rgb(31 12 73) 0%, rgb(85 45 253) 100%);
+    background: linear-gradient(0deg, rgb(51, 22, 112) 0%, rgb(98, 61, 245) 100%);
 }
 
 .dashboard-button:hover {
     cursor: pointer;
+    background-color: #ebebef;
+}
+
+.dashboard-button:active {
+    transform: scale(0.95);
 }
