@@ -32,6 +32,7 @@ function Dashboard () {
               className={`dashboard-button ${selected === index ? 'current' : ''}`}
             >
               {label}
+              <img className='dashboard-button-img' src={`/icons/` + index + '.png'} alt="" />
             </button>
           ))}
         </section>

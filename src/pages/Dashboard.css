@@ -11,10 +11,10 @@
 .dashboard-menu {
     display: flex;
     flex-direction: column;
-    width: 22%;
+    width: 23%;
     height: 100%;
     padding: 20px;
-    background-image: url('/public/background.jpg');
+    background-image: url('/background.jpg');
     background-size: cover;        /* Zorgt dat de foto de hele container vult */
     background-position: left;   /* Centreert de foto */
     background-repeat: no-repeat;  /* Herhaalt de foto niet */
@@ -22,7 +22,7 @@
     padding-top: 130px;
     border-radius: 0px 40px 40px 0px;
     z-index: 2;
-    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.148) 0px 1px 1px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 .dashboard-main {
@@ -51,7 +51,9 @@
     color: rgb(255, 255, 255);
     padding: 10px;
     text-indent: 20px;
-    display: inline-block; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
     font-family: 'Luckiest Guy', cursive;
     transition: transform 0.2s, background-color 0.2s ease-in-out;
 }
@@ -59,7 +61,7 @@
 .current {
     color: rgb(255, 255, 255);
     /* background: linear-gradient(0deg, rgb(51, 22, 112) 0%, rgb(98, 61, 245) 100%); */
-    background: linear-gradient(0deg, rgb(177, 105, 42) 0%, rgba(253, 187, 45, 1) 100%);
+    background: linear-gradient(0deg, rgb(164, 97, 38) 0%, rgba(253, 187, 45, 1) 100%);
 /* box-shadow: rgba(255, 246, 246, 0.649) 0px 20px 25px -5px, rgba(255, 247, 247, 0.956) 0px 10px 10px -5px; */
 box-shadow: rgba(133, 160, 255, 0.241) 0px 18px 50px -10px;
 }
@@ -73,4 +75,10 @@ box-shadow: rgba(133, 160, 255, 0.241) 0px 18px 50px -10px;
 .dashboard-button:active {
     transform: scale(0.98);
     height: 45px;
+}
+
+.dashboard-button-img {
+    width: 50px;
+    height:50px;
+    margin-right: 20px;
 }
