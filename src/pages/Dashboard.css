@@ -5,24 +5,31 @@
     margin: 0;
     display: flex;
     font-family: 'Luckiest Guy', cursive;
+    background-color: #f7f7f7;
 }
 
 .dashboard-menu {
     display: flex;
     flex-direction: column;
-    width: 22%;
+    width: 23%;
     height: 100%;
     padding: 20px;
-    background: #f7f7f7;
+    background-image: url('/public/mm.jpg');
+    background-size: cover;        /* Zorgt dat de foto de hele container vult */
+    background-position: left;   /* Centreert de foto */
+    background-repeat: no-repeat;  /* Herhaalt de foto niet */
+    min-height: 100vh;  
     padding-top: 130px;
+    border-radius: 0px 40px 40px 0px;
     z-index: 2;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
 }
 
 .dashboard-main {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
-    background: #ffffff;
+    background: #f7f7f7;
 }
 
 .dash-img {
@@ -36,31 +43,33 @@
 
 .dashboard-button {
     all: unset;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 25px;
     width: 90%;
     height: 45px;
     margin: 5px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 10px;
     text-indent: 20px;
     display: inline-block; 
     font-family: 'Luckiest Guy', cursive;
-    transition: transform 0.2s, background-color 0.1s ease-in-out;
+    transition: transform 0.2s, background-color 0.2s ease-in-out;
 }
 
 .current {
     color: rgb(255, 255, 255);
     /* background: linear-gradient(0deg, rgb(51, 22, 112) 0%, rgb(98, 61, 245) 100%); */
-    background: linear-gradient(5deg, rgba(173, 97, 29, 1) 0%, rgba(253, 187, 45, 1) 100%);
-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;}
+    background: linear-gradient(0deg, rgb(177, 105, 42) 0%, rgba(253, 187, 45, 1) 100%);
+/* box-shadow: rgba(255, 246, 246, 0.649) 0px 20px 25px -5px, rgba(255, 247, 247, 0.956) 0px 10px 10px -5px; */
+box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
 
 .dashboard-button:hover {
     cursor: pointer;
-    background-color: #efefef; 
+    background-color: #00000013;
 }
 
 .dashboard-button:active {
-    transform: scale(0.95);
+    transform: scale(0.98);
     height: 45px;
 }
